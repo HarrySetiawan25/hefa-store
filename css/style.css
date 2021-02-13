@@ -95,18 +95,18 @@ body{
     padding-top: 70px;
     padding-bottom: 40px;
 }
-.features h3{
+.features h3, .designer h3{
     font-family: 'Lora';
     color: #1A258D;
     font-weight: bold;
 }
-.features p{
+.features p, .designer p{
     font-weight: 300;
     margin-bottom: 0;
     font-size: 18px;
     color: #989292;
 }
-.features .product{
+.features .item, .designer .item{
     margin-top: 30px;
 }
 .figure-img {
@@ -135,8 +135,56 @@ body{
 .figure-caption h5:hover{
     color: #1A258D;
 }
-@media (min-width: 576px) {
+
+/* Designer */
+.designer{
+    background-color: #F0F1F5;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+.designer-img{
+    position: relative;
+}
+.designer-img a{
+    position: absolute;
+    display: inline-block;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin-left: 70px;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+.designer-img:hover{
     
+}
+
+/* Footer */
+footer{
+    background-color: #1A258D;
+    height: 258px;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+footer p{
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+footer a{
+    text-decoration: none;
+}
+footer span{
+    color: #FFFFFF;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 554px) {
+    footer{
+        height: 216px;
+        padding-bottom: 8px;
+    }
 }
 @media (min-width: 768px) {
     .carousel h1{
@@ -167,5 +215,11 @@ body{
     .brands .row{
         padding-top: 70px;
         padding-bottom: 70px;
+    }
+}
+@media (min-width: 1200px) {
+    footer{
+        height: 180px;
+        padding-bottom: 0;
     }
 }
