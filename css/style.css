@@ -1,10 +1,16 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
+
+/* Navbar */
 .navbar{
-    background-color: #fff;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    background-color: #FFFFFF !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.container{
+    padding-left: 0;
+    padding-right: 0;
 }
 .navbar-brand span{
     color: #1A258D;
@@ -17,6 +23,10 @@ body{
     font-weight: 300;
 }
 .nav-item.active a{
+    color: #FE5E00 !important;
+    font-weight: 600;
+}
+.nav-item a:hover{
     color: #FE5E00 !important;
     font-weight: 600;
 }
@@ -34,4 +44,84 @@ body{
 .navbar .icon span b{
     font-weight: 600;
     color: #FE5E00;
+}
+
+/* Carousel */
+.carousel{
+    height: 450px;
+    color: #1A258D;
+}
+.carousel h1{
+    display: block;
+    font-family: 'Lora';
+    font-weight: 600;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+.carousel p{
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+.carousel .button{
+    display: inline-block;
+    text-decoration: none;
+    background-color: #FE5E00;
+    border-radius: 4px;
+    height: 40px;
+    width: 170px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 600;
+}
+.carousel .row img{
+    border-radius: 8px;
+}
+.carousel .slideimg{
+    line-height: 450px;
+}
+
+/* Brands */
+.brands{
+    height: 472px;
+    background-color: #F0F1F5;
+}
+.brands .row{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+@media (min-width: 576px) {
+    
+}
+@media (min-width: 768px) {
+    .carousel h1{
+        margin-top: 70px;
+        font-size: 3rem;
+    }
+    .carousel p{
+        font-size: 1.25rem;
+    }
+    .brands{
+        height: 308px;
+    }
+    .brands .row{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+@media (min-width: 992px) {
+    .nav-item{
+        font-size: 1.25rem;
+    }
+    .carousel .slideimg{
+        margin-left: 8.333333%;
+    }
+    .brands{
+        height: 220px;
+    }
+    .brands .row{
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
 }
