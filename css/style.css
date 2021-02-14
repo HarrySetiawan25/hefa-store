@@ -47,6 +47,7 @@ body{
 
 /* Carousel */
 .carousel{
+    margin-top: 85px;
     height: 450px;
     color: #1A258D;
 }
@@ -152,12 +153,7 @@ body{
     left: 0px;
     right: 0px;
     bottom: 0px;
-    margin-left: 70px;
-    opacity: 1;
-    transition: opacity 0.3s;
-}
-.designer-img:hover{
-    
+    transform: translateX(40px);
 }
 
 /* Footer */
@@ -178,6 +174,150 @@ footer span{
     color: #FFFFFF;
     font-size: 14px;
     margin-bottom: 20px;
+}
+
+/* Breadcrumb */
+.breadcrumb{
+    margin-top: 105px;
+    font-size: 18px;
+    font-weight: 300;
+}
+.breadcrumb .active{
+    color: #1A258D;
+}
+.breadcrumb a{
+    color: #1A258D;
+    font-weight: 600;
+}
+.breadcrumb a:hover{
+    text-decoration: none;
+    color: #FE5E00;
+}
+
+/* Single Product */
+.product-thumbnail-container{
+    padding: 10px 8px;
+    background-color: #fff;
+    width: 381px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    transform: translateY(-50px);
+}
+.product-thumbnail-container .active img{
+    border: 2px solid #1ABC9C;
+}
+
+.single-product h3{
+    font-family: 'Lora';
+}
+.single-product p{
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 0;
+    color: #989292;
+}
+.qty{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding: 0 15px;
+}
+.qty .btn{
+    height: 38px;
+    width: 38px;
+    padding: 3px;
+    color: #fff;
+}
+.qty span{
+    line-height: 38px;
+}
+.minus{
+    background-color: #EAEAEF;
+}
+.plus{
+    background-color: #1ABC9C;
+}
+.btn-product{
+    width: 318px;
+    border-bottom: 1px solid #1A258D;
+    margin-bottom: 30px;
+}
+.btn-product .btn{
+    padding: 0;
+    display: block;
+    width: 276px;
+    height: 45px;
+    line-height: 45px;
+    margin-bottom: 30px;
+    background-color: #EAEAEF;
+    font-size: 18px;
+    font-weight: 600;
+}
+.btn-product .btn-cart{
+    background-color: #FE5E00;
+    color: #FFFFFF;
+}
+.designed-by h6{
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    color: #989292;
+}
+.designed-by h5, #review .review-content h5{
+    font-size: 18px;
+    font-family: 'Lora';
+    margin-bottom: 4px;
+    color: #171717;
+}
+.designed-by p, #review .review-content p{
+    font-size: 14px;
+    color: #171717;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.designed-by p span{
+    color: #989292;
+    font-weight: 300;
+}
+.designed-by div.text-center{
+    padding-top: 7px;
+}
+
+/* Product Description */
+.product-description{
+    height: 350px;
+    background-color: #F0F1F5;
+    margin-bottom: 145px;
+}
+.product-description .nav-link{
+    font-size: 18px !important;
+    font-weight: 300 !important;
+    color: #989292 !important;
+}
+.product-description .nav-link.active{
+    font-weight: 600 !important;
+    color: #171717 !important;
+}
+.product-description .nav-link:hover{
+    color: #171717 !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+}
+.product-description .tab-content{
+    min-height: 330px;
+    max-height: 400px;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-top: 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0,06);
+    text-align: justify;
+    font-size: 18px;
+    color: #868686;
+    line-height: 28px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.product-description #review .review-content p{
+    color: #989292;
 }
 
 @media (min-width: 554px) {
@@ -215,6 +355,10 @@ footer span{
     .brands .row{
         padding-top: 70px;
         padding-bottom: 70px;
+    }
+    .product-description .tab-content{
+        overflow-y: hidden;
+        max-height: 450px;
     }
 }
 @media (min-width: 1200px) {
