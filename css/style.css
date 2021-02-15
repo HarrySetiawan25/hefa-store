@@ -96,12 +96,12 @@ body{
     padding-top: 70px;
     padding-bottom: 40px;
 }
-.features h3, .designer h3{
+.features h3, .designer h3, .cart-tittle h3, #checkoutModal h3{
     font-family: 'Lora';
     color: #1A258D;
     font-weight: bold;
 }
-.features p, .designer p{
+.features p, .designer p, .cart-tittle p, #checkoutModal p{
     font-weight: 300;
     margin-bottom: 0;
     font-size: 18px;
@@ -182,6 +182,9 @@ footer span{
     font-size: 18px;
     font-weight: 300;
 }
+.cart-breadcrumb{
+    margin-top: 50px;
+}
 .breadcrumb .active{
     color: #1A258D;
 }
@@ -221,13 +224,14 @@ footer span{
     margin-bottom: 50px;
     padding: 0 15px;
 }
-.qty .btn{
+.qty .btn, .checkout-item .btn{
     height: 38px;
     width: 38px;
     padding: 3px;
     color: #fff;
+    display: inline-block;
 }
-.qty span{
+.qty span, .checkout-item span{
     line-height: 38px;
 }
 .minus{
@@ -236,12 +240,15 @@ footer span{
 .plus{
     background-color: #1ABC9C;
 }
+.delete{
+    background-color: #E91515;
+}
 .btn-product{
     width: 318px;
     border-bottom: 1px solid #1A258D;
     margin-bottom: 30px;
 }
-.btn-product .btn{
+.btn-product .btn, .btn-cancel .btn, .btn-checkout .btn, #checkoutModal .btn{
     padding: 0;
     display: block;
     width: 276px;
@@ -252,7 +259,7 @@ footer span{
     font-size: 18px;
     font-weight: 600;
 }
-.btn-product .btn-cart{
+.btn-product .btn-cart, .btn-checkout .btn-cart{
     background-color: #FE5E00;
     color: #FFFFFF;
 }
@@ -262,13 +269,13 @@ footer span{
     margin-bottom: 15px;
     color: #989292;
 }
-.designed-by h5, #review .review-content h5{
+.designed-by h5, #review .review-content h5, .checkout h5{
     font-size: 18px;
     font-family: 'Lora';
     margin-bottom: 4px;
     color: #171717;
 }
-.designed-by p, #review .review-content p{
+.designed-by p, #review .review-content p, .checkout p{
     font-size: 14px;
     color: #171717;
     font-weight: 400;
@@ -320,6 +327,51 @@ footer span{
     color: #989292;
 }
 
+/* Checkout */
+.checkout h4{
+    color: #1A258D;
+    font-family: 'Lora';
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+.checkout p{
+    color: #989292;
+}
+.checkout .tax-discount h5{
+    font-weight: 600;
+}
+.checkout .price p{
+    color: #1ABC9C;
+    font-weight: 600;
+}
+.checkout .price.promo p{
+    color: #E91515;
+}
+.checkout .price.total p{
+    color: #1A258D;
+}
+.checkout .form-group label{
+    font-size: 14px;
+}
+.checkout .form-control, .checkout .custom-select{
+    width: 66.7%;
+}
+.payment{
+    padding: 20px;
+    height: 442px;
+    background-color: #F0F1F5;
+    border-radius: 10px;
+}
+.item-info{
+    border-bottom: 1px solid #A19C9C;
+}
+.btn-cancel .btn, .btn-checkout .btn{
+    width: 160px;
+}
+#checkoutModal .btn{
+    display: inline;
+    width: 180px;
+}
 @media (min-width: 554px) {
     footer{
         height: 216px;
