@@ -5,7 +5,7 @@ body{
 
 /* Navbar */
 .navbar{
-    background-color: #FFFFFF !important;
+    background-color: #fff !important;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -84,7 +84,7 @@ body{
 /* Brands */
 .brands{
     height: 472px;
-    background-color: #F0F1F5;
+    background-color: #F6F7FB;
 }
 .brands .row{
     padding-top: 40px;
@@ -139,7 +139,7 @@ body{
 
 /* Designer */
 .designer{
-    background-color: #F0F1F5;
+    background-color: #F6F7FB;
     padding-top: 70px;
     padding-bottom: 50px;
 }
